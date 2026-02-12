@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from topsis import topsis
 
 st.title("TOPSIS Decision Making Tool")
 
