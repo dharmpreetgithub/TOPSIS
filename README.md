@@ -44,5 +44,39 @@ To rank multiple alternatives based on multiple criteria using the TOPSIS multi-
 ### Input (Command Line Format)
 
 ```bash
-python topsis.py <InputDataFile> <Weights> <Impacts> <OutputFileName>
+###Algorithm Explanation
+Step 1: Normalize Decision Matrix
+
+Each value is normalized using vector normalization to eliminate scale differences among criteria.
+
+Step 2: Weighted Normalization
+
+Each normalized value is multiplied by its corresponding weight to reflect the importance of each criterion.
+
+Step 3: Determine Ideal Best and Ideal Worst
+
+For each criterion:
+
+If impact is '+', higher value is preferred.
+
+If impact is '-', lower value is preferred.
+
+Step 4: Calculate Separation Measures
+
+Euclidean distance is calculated:
+
+Distance from Ideal Best
+
+Distance from Ideal Worst
+
+Step 5: Compute TOPSIS Score
+
+Score is calculated as:
+
+Score = Distance from Worst / (Distance from Best + Distance from Worst)
+
+Step 6: Rank Alternatives
+
+Alternatives are ranked in descending order of TOPSIS score.
+Higher score indicates better alternative.
 
