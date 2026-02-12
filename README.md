@@ -43,7 +43,7 @@ To rank multiple alternatives based on multiple criteria using the TOPSIS multi-
 
 ### Input (Command Line Format)
 
-```bash
+
 ###Algorithm Explanation
 Step 1: Normalize Decision Matrix
 
