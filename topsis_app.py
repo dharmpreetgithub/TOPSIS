@@ -21,6 +21,3 @@ impacts = st.text_input(...)
 if st.button("Run TOPSIS"):
     ...
     topsis("temp.csv", weights, impacts, "output.csv")
-
-        st.error("Please upload a CSV file.")
-
